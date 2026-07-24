@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+
+    margin:0;
+    padding:0;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.Section-WhoAreWe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    background-color: #2175d9;
+    padding-bottom: 50px;
+    padding-top: 70px;
+
+    /*background-color: #2175d9;*/
+    gap: 50px;
+}
+
+.WhoAreWe-left {
+    width: 550px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    /*justify-content: center;*/
+    align-items: center;
+    font-weight: 200;
+    /*background-color: orangered;*/
+    /*font-size: 50px;*/
+    /*margin-bottom: 50px;*/
+}
+
+/*.Natproteg-logo2 {*/
+/*    width: 600px;*/
+/*    !*height: 300px;*!*/
+/*    !*background-color: #f3bb2f;*!*/
+/*}*/
+
+.WhoAreWe-left h1 {
+    font-size: clamp(47px, 4vw, 48px); /* adapte la taille selon l'écran */
+    font-weight: 400;
+    /*margin: 0;*/
+    font-family: "Roboto", sans-serif;
+    /*margin: 50px;*/
+    color: #43defb;
+    /*color: #0274df;*/
+    line-height: 1.3;
+    /*width: 410px;*/
+    /*background-color: #f3bb2f;*/
+    margin-right: 50px;
+    /*margin-top: 30px;*/
+}
+
+.WhoAreWe-right {
+    /*background-color: yellow;*/
+    width: 650px;
+    /*height: 37vh;*/
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.WhoAreWe-right p {
+    color: white;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.WhoAreWe-title {
+    font-size: clamp(24px, 4vw, 24px);  /* adapte la taille selon l'écran */
+    font-weight: 500;
+    margin: 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.WhoAreWe-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* espace vertical entre les éléments */
+    /*max-width: 850px;*/
+    /*margin: 0 auto;*/
+    padding: 20px 25px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+/* Élément individuel */
+.checklist-item {
+    display: flex;
+    /*align-items: center;*/
+    gap: 15px; /* espace entre l’icône et le texte */
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    /*background-color: #0091ff;*/
+}
+
+/* Icône verte */
+.checklist-item i{
+    color: white;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+/* Texte */
+.checklist-item div {
+    font-weight: 300;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+/*!*-------------------------------------------*!*/
+
+
+@media screen and (max-width:1350px) {
+
+    .Section-WhoAreWe {
+        gap: 0px;
+    }
+
+    .WhoAreWe-left {
+        /*background-color: orangered;*/
+        width: 750px;
+        height: auto;
+        display: flex;
+        justify-content: left;
+        /*justify-content: center;*/
+        align-items: center;
+        font-weight: 200;
+        font-size: 50px;
+        margin-bottom: 50px;
+        gap: 0px;
+    }
+
+    .WhoAreWe-right {
+        /*background-color: #3f97fb;*/
+        width: 750px;
+        height: 37vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .WhoAreWe-left h1 {
+        width: 70%;
+        font-size: clamp(35px, 4vw, 40px); /* adapte la taille selon l'écran */
+        font-weight: 700;
+        /*margin: 0;*/
+        font-family: "Poppins", sans-serif;
+        /*margin: 50px;*/
+        /*color: #1c6077;*/
+        /*text-align: center;*/
+    }
+}
+
+
+/*-------------------*/
+
+@media screen and (max-width:940px) {
+
+    .Section-WhoAreWe {
+        width: 100%;
+        padding: 50px 5px; /* 50px haut/bas, 20px gauche/droite */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .WhoAreWe-left {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-color: #0091ff;*/
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .WhoAreWe-left h1 {
+        font-size: clamp(36px, 4vw, 48px); /* adapte la taille selon l'écran */
+        font-weight: 400;
+        margin: 0;
+        width: 600px;
+    }
+
+    .WhoAreWe-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;    /* un petit padding pour éviter que le texte touche les bords */
+    }
+
+    .WhoAreWe-title {
+        font-size: clamp(24px, 4vw, 25px);  /* adapte la taille selon l'écran */
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .WhoAreWe-text {
+        font-size: 17.5px; /* adapte la taille selon l'écran */
+        font-weight: 400;
+    }
+
+    .WhoAreWe-text {
+        /*display: grid;*/
+        /*grid-template-columns: repeat(2, 1fr);*/
+        gap: 16px 30px;
+
+    }
+
+}

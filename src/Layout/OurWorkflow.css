@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-OurWorkflow {
+    width: 100%; /* Au lieu de 100% */
+    max-width: 100%;
+    margin: 0 auto; /* Centrer horizontalement */
+    height: auto;
+    /*background-color: #d7e9ee;*/
+    /*background-color: #f0f0f0;*/
+    background:#f7f5f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+
+.Container-OurWorkflow h1 {
+    font-size: clamp(37px, 4vw, 50px); /* adapte la taille selon l'écran */
+    font-weight: 400;
+    /*margin: 0;*/
+    font-family: "Poppins", sans-serif;
+    /*margin: 50px;*/
+    color: black;
+    /*color: white;*/
+    /*color: #1c6077;*/
+    text-align: center;
+    /*width: 900px;*/
+    padding-bottom: 80px;
+}
+
+.OurWorkflow-wrapper {
+    width: auto;
+    height: auto;
+    /*background-color: navajowhite;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Container-OurWorkflow-content {
+    width: 330px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    /*border: 2px solid #d1d1d1;*/
+    /*border: 2px solid #cccccc;*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.Container-OurWorkflow-content:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Ombre plus visible */
+    transform: translateY(-5px); /* Légère élévation pour accentuer l’effet */
+}
+
+
+
+.icon_home_workflow {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.Container-OurWorkflow-content h2 {
+    font-size: clamp(25px, 4vw, 27px);
+    font-weight: 500;
+    color: black;
+    /*color: white;*/
+    margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.Container-OurWorkflow-content ul {
+    font-size: 15px;
+    line-height: 1.6;
+    /*color: #555;*/
+    color: black;
+    /*margin-bottom: 40px;*/
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    /*background-color: #f3bb2f;*/
+}
+
+.checklist {
+    list-style: none;  /* Supprime les puces par défaut */
+    padding: 0;
+    margin: 0;
+}
+
+.checklist li {
+    display: flex;           /* Met icône et texte sur la même ligne */
+    align-items: flex-start; /* Aligne l’icône en haut si texte long */
+    margin-bottom: 10px; /* Espace entre les phrases */
+}
+
+.checklist i {
+    margin-right: 20px;      /* Espace entre l’icône et le texte */
+    flex-shrink: 0;          /* Empêche l’icône de se réduire */
+    /*color: green;            !* Couleur de l’icône (optionnel) *!*/
+    /*color:#1c6077;*/
+    /*color: #f3bb2f;*/
+    color: #2175d9;
+}
+
+.checklist span {
+    display: block;          /* Force le texte à s’aligner correctement */
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 350;
+    color: #052045;
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .OurWorkflow-wrapper {
+        width: 100%;
+        height: auto;
+        /*background-color: navajowhite;*/
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Container-OurWorkflow-content {
+        width: 320px;
+        height: auto;
+        /*background-color: #1c1c1c;*/
+        /*border-radius: 35px;*/
+        padding: 30px;
+    }
+
+    .Container-OurWorkflow h1 {
+        /*777*/
+        /*width: 900px;*/
+        padding-bottom: 50px;
+        font-weight:500 ;
+    }
+
+    .Container-OurWorkflow-content ul {
+        /*font-size: 15px;*/
+        /*line-height: 1.6;*/
+        /*!*color: #555;*!*/
+        /*color: black;*/
+        /*margin-bottom: 40px;*/
+        /*font-family: "Poppins", sans-serif;*/
+        /*list-style: none;*/
+    }
+
+    .checklist {
+        /*list-style: none;  !* Supprime les puces par défaut *!*/
+        /*padding: 0;*/
+        /*margin: 0;*/
+    }
+
+    .checklist li {
+        /*display: flex;           !* Met icône et texte sur la même ligne *!*/
+        /*align-items: flex-start; !* Aligne l’icône en haut si texte long *!*/
+        /*margin-bottom: 10px; !* Espace entre les phrases *!*/
+    }
+
+    .checklist i {
+        /*margin-right: 20px;      !* Espace entre l’icône et le texte *!*/
+        /*flex-shrink: 0;          !* Empêche l’icône de se réduire *!*/
+        /*!*color: green;            !* Couleur de l’icône (optionnel) *!*!*/
+        /*!*color:#1c6077;*!*/
+        /*color: #0091ff;*/
+    }
+
+    .checklist span {
+        /*display: block;          !* Force le texte à s’aligner correctement *!*/
+        /*font-family: "Poppins", sans-serif;*/
+        font-size: 18px;
+        font-weight: 400;
+        color: #052045;
+    }
+
+
+}

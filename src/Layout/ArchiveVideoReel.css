@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.video-session {
+    /*max-width: 1080px;*/
+    margin: 0 auto;
+    /*padding: 20px;*/
+    text-align: center;
+    /*background-color: yellow;*/
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.video-session h1 {
+    font-size: 3.5rem;
+    /*margin-bottom: 15px;*/
+    font-family: "Poppins", sans-serif;
+    /*color: #f3bb2f;*/
+    /*color: #ffe400;*/
+    color: black;
+    margin-bottom: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+    background-color: #0091ff;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.video-session p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 80%;
+    /*color: #555;*/
+    font-family: "Poppins", sans-serif;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    /*background-color: #1c1c1c;*/
+    /*padding: 30px;*/
+    border-radius: 30px;
+}
+
+/*-------------------------*/
+
+/* Conteneur vidéo centré et réduit */
+.Archive-video-wrapper {
+    position: relative;
+    width: 80%; /* 👈 réduit la largeur (tu peux mettre 60% ou 75% selon ton goût) */
+    max-width: 1200px; /* 👈 limite la taille max sur grand écran */
+    height: 700px; /* 👈 hauteur fixe (plus petite que YouTube standard) */
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    /*border: 2px solid #f3bb2f;*/
+}
+
+/* Pour le mobile : plus étroit mais adapté */
+.Archive-video-wrapper.mobile {
+    width: 90%;
+    padding-bottom: 160%; /* ratio vertical */
+}
+
+.Archive-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*----------------@media query-------*/
+
+@media (max-width: 768px) {
+
+    .video-session {
+        /*max-width: 1080px;*/
+        margin: 0 auto;
+        /*padding: 20px;*/
+        text-align: center;
+        padding-bottom: 80px;
+        /*padding-left: 10px;*/
+        /*padding-right: 10px;*/
+    }
+
+    .Archive-video-wrapper {
+        /*position: relative;*/
+        /*width: 50%; !* 👈 réduit la largeur (tu peux mettre 60% ou 75% selon ton goût) *!*/
+        /*max-width: 1200px; !* 👈 limite la taille max sur grand écran *!*/
+        /*height: 700px; !* 👈 hauteur fixe (plus petite que YouTube standard) *!*/
+        /*margin: 0 auto;*/
+        /*border-radius: 30px;*/
+        /*overflow: hidden;*/
+        /*box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);*/
+        /*border: 1px solid #f3bb2f ;*/
+    }
+
+    .video-session h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        text-align: left;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+
+    .video-session p {
+        margin-bottom: 15px;
+        width: 85%;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-size: 17px;
+    }
+
+
+    }
+

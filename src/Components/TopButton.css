@@ -1,0 +1,75 @@
+.TopButton {
+    /*background-color: white;*/
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top:50vh;
+    left:70vw;
+}
+
+.TopButton i {
+    /*background-color: #2f013c;*/
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    /*color: #0091ff;*/
+    color: #104c94;
+    top:80vh;
+    left:95vw;
+    /*transform: scale(1.01);*/
+    /*!*transform: 0.1s ease-in-out;*!*/
+    /*transition-duration: 0.1s;*/
+}
+
+.TopButton i:hover {
+    /*color: #0091ff;*/
+    /*transform: scale(1.1);*/
+    /*!*transform: 0.0s ease-in-out;*!*/
+    /*!*!*opacity: 0.9;*!*!*/
+
+}
+
+.TopButton {
+    transition: opacity .3s ease;
+}
+
+.TopButton.active {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*-----------------------------------------*/
+
+@media screen and (max-width:1040px) {
+    .TopButton i {
+        /*background-color: #2f013c;*/
+        width: 150px;
+        height: 150px;
+        left:93vw;
+    }
+}
+
+/*-----------------------------------------*/
+
+@media screen and (max-width:940px) {
+    .TopButton i {
+        /*background-color: #2f013c;*/
+        width: 150px;
+        height: 150px;
+        left:87%;
+    }
+
+}
+
+/*-----------------------------------------*/
+
+@media screen and (max-width:480px) {
+    /*.TopButton i {*/
+    /*    display: none;*/
+    /*}*/
+
+}
+
+
+

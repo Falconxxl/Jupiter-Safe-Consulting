@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================
+   DESKTOP — caché
+================================ */
+.Navbar-mobile {
+    display: none;
+}
+
+.Container-NavbarMenuMobile {
+    display: none;
+}
+
+/* ================================
+   MOBILE (max 945px)
+================================
+   Navbar2Mobile    → top: 0,    height: 50px  (fixe en px)
+   NavbarMenuMobile → top: 50px, height: 9vh   ✅ collé juste en dessous
+================================ */
+@media screen and (max-width: 945px) {
+
+    .Navbar-mobile {
+        width: 100%;
+        height: 80px;                /* ← hauteur fixe garantie */
+        background-color: white;
+        display: flex;
+        align-items: center;         /* ← centre le contenu verticalement */
+        position: fixed;
+        top: 50px;
+        left: 0;
+        z-index: 500;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .Container-NavbarMenuMobile {
+        width: 100%;
+        height: 80px;                /* ← même hauteur que le parent */
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;         /* ← logo et icône centrés verticalement */
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    /* ================================
+       LOGO
+    ================================ */
+    .logo-falcon-NavMenu2 {
+        height: 40px;
+    }
+
+    /* ================================
+       PHONE (optionnel)
+    ================================ */
+    .container-phone-mobile {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: "Montserrat", sans-serif;
+        margin-left: 10px;
+    }
+
+    .phone-icon-mobile {
+        color: #D62828;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .phone-number-mobile {
+        color: black;
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    /* ================================
+       HAMBURGER WRAPPER
+    ================================ */
+    .Container-Hamburger {
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ================================
+   PETITS MOBILES (max 480px)
+================================ */
+@media screen and (max-width: 480px) {
+
+    .Navbar-mobile {
+        top: 50px;      /* Navbar2Mobile toujours 50px */
+        height: 80px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    /*.Container-NavbarMenuMobile {*/
+    /*    width: 100%;*/
+    /*    height: 80px;                !* ← même hauteur que le parent *!*/
+    /*    background-color: white;*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;         !* ← logo et icône centrés verticalement *!*/
+    /*    padding-left: 20px;*/
+    /*    padding-right: 20px;*/
+    /*    box-sizing: border-box;*/
+    /*}*/
+
+    .logo-falcon-NavMenu2 {
+        height: 34px;
+    }
+}
+
+

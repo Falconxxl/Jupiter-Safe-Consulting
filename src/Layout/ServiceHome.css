@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   SECTION SERVICES
+================================ */
+
+.Container-ServiceHome {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:70px 20px;
+
+    gap:50px;
+
+    background:#f7f5f0;
+
+}
+
+
+/* ==============================
+   TITRE
+================================ */
+
+.title-ServiceHome{
+
+    font-size:clamp(35px,4vw,48px);
+
+    font-weight:400;
+
+    font-family:"Poppins",sans-serif;
+
+    text-align:center;
+
+    color:#0f1941;
+
+}
+
+
+.title-ServiceHome-mobile{
+
+    display:none;
+
+}
+
+
+
+/* ==============================
+   WRAPPER DES CARTES
+================================ */
+
+
+.Container-ServiceHome-single-wrap{
+
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+}
+
+
+
+
+/* ==============================
+   CARD SERVICE
+================================ */
+
+
+.Container-ServiceHome-single{
+
+
+    width:400px;
+
+
+    max-width:100%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    padding:35px;
+
+
+    gap:20px;
+
+
+    background:white;
+
+    border-radius: 5px;
+
+
+}
+
+.Container-ServiceHome-single:hover {
+    border: 1px solid #2175d9 ;
+}
+
+
+
+/* ==============================
+   IMAGE
+================================ */
+
+
+.media-Container-ServiceHome-single{
+
+
+    width:100%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.image-mike_brenda-home{
+
+
+    width:100%;
+
+
+    height:auto;
+
+
+    display:block;
+
+
+}
+
+
+
+/* ==============================
+   TITRE SERVICE
+================================ */
+
+
+.Container-ServiceHome-single h1{
+
+
+    width:100%;
+
+
+    font-size:30px;
+
+
+    font-family:"Poppins",sans-serif;
+
+
+    color:#0f1941;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+/* ==============================
+   TEXTE
+================================ */
+
+
+.text-Container-ServiceHome-single{
+
+
+    width:100%;
+
+
+}
+
+
+
+.Container-ServiceHome-single p{
+
+
+    width:100%;
+
+
+    font-size:17px;
+
+
+    /*color:#5a607c;*/
+
+    color:#0f1941;
+
+
+    font-weight:350;
+
+
+    line-height:1.7;
+
+
+    margin-bottom:20px;
+
+
+    font-family:"Poppins",sans-serif;
+
+
+}
+
+
+
+/* ==============================
+   BOUTON
+================================ */
+
+
+.btn-text-Container-ServiceHome-single{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    gap:10px;
+
+
+    width:fit-content;
+
+
+    margin:0 auto;
+
+
+    background:#2175d9;
+
+
+    color:white;
+
+
+    padding:15px 55px;
+
+
+    text-decoration:none;
+
+
+    font-family:"Poppins",sans-serif;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-text-Container-ServiceHome-single:hover{
+
+
+    background:#1e345e;
+
+
+}
+
+
+
+
+/* ==============================
+   TABLETTE LARGE
+================================ */
+
+
+@media(max-width:1200px){
+
+
+    .Container-ServiceHome-single{
+
+
+        width:45%;
+
+
+    }
+
+
+}
+
+
+
+/* ==============================
+   TABLETTE
+================================ */
+
+
+@media(max-width:992px){
+
+
+    .Container-ServiceHome-single{
+
+
+        width:45%;
+
+
+    }
+
+
+}
+
+
+
+/* ==============================
+   MOBILE
+================================ */
+
+
+@media(max-width:768px){
+
+
+    .title-ServiceHome{
+
+
+        display:none;
+
+
+    }
+
+
+
+    .title-ServiceHome-mobile{
+
+
+        display:block;
+
+
+        font-size:40px;
+
+
+        font-family:"Poppins",sans-serif;
+
+
+        font-weight:500;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+
+
+    .Container-ServiceHome-single-wrap{
+
+
+        flex-direction:column;
+
+
+        align-items:center;
+
+
+        gap:30px;
+
+
+    }
+
+
+
+    .Container-ServiceHome-single{
+
+
+        width:95%;
+
+
+        padding:25px;
+
+
+    }
+
+
+
+    .Container-ServiceHome-single h1{
+
+
+        font-size:26px;
+
+        color:#0f1941;
+
+
+    }
+
+
+
+    .Container-ServiceHome-single p{
+
+
+        font-size:18px;
+
+        color:#0f1941;
+
+        font-weight: 400;
+
+
+    }
+
+
+
+    .btn-text-Container-ServiceHome-single{
+
+
+        width:100%;
+
+        padding:15px 45px;
+
+
+    }
+
+
+
+}

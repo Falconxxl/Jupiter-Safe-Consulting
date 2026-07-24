@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-Portfolio {
+    width: 100%;
+    height: 90vh;
+    background-color: darkred;
+    box-sizing: border-box;
+    /*background-image: url("../Assets/banner19.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------------------------------------------*/
+
+.Container-BadkamerKozijnen {
+    position: relative;
+    width: 100%;
+    height: Auto;
+    overflow: hidden;
+    background-color: red;
+    padding: 260px 100px 100px 100px;
+}
+
+.hero-content-BadkamerKozijnen h1 {
+    font-family:"Poppins", sans-serif;
+    font-size: 150px;      /* ou 7vw si tu veux responsive */
+    font-weight: 600;     /* ultra-thin */
+    color: black;
+    line-height: 1.0;
+    margin-bottom: 50px;
+
+}
+
+.BadkamerKozijnen-paragraphe-desktop {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 70px;   /* espace entre p et bouton */
+    font-weight: 500;
+}
+
+.BadkamerKozijnen-paragraphe-mobile {
+    display:none;
+}
+
+.cta-btn-BadkamerKozijnen {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-family: "Figtree", sans-serif;
+    border: 2px solid white;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.cta-btn-BadkamerKozijnen:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/*--------------------------------------------*/
+
+
+/*------Description--------*/
+
+.AudioVisual-Description {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*margin-bottom: 50px;*/
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /*background-color: #141414;*/
+    /*background-color: #f3bb2f;*/
+    gap: 30px;
+}
+
+.AudioVisual-Description-left {
+    /*background-color: #141414;*/
+    background-color: red;
+    width: 700px;
+    color: white;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border-left: 1px solid #f3bb2f ;
+}
+
+.AudioVisual-Description-left h1 {
+    font-family:"Poppins", sans-serif;
+    /*color: #1c6077;*/
+    font-size: 52px;
+    text-align: left;
+    /*color: #fcd552;*/
+    /*color: white;*/
+    font-weight: 800;
+}
+
+.AudioVisual-Description-left p {
+    font-family:"Poppins", sans-serif;
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    /*color: #1c6077;*/
+    /*color: #fcd552;*/
+}
+
+.AudioVisual-Description-Right {
+    background-color: black;
+    /*background-color: #141414;*/
+
+    width: 700px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 30px;
+    border-left: 1px solid #f3bb2f ;
+}
+
+.AudioVisual-Description-Right p{
+    font-family:"Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+
+}
+
+
+/*-------------------------------------------*/
+
+@media screen and (max-width:940px) {
+
+
+    .Container-Portfolio {
+        width: 100%;
+        height: 80vh;
+        /*background-color: yellow;*/
+        box-sizing: border-box;
+        /*background-image: url("../Assets/banner_mobile3.jpg");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        /*justify-content: center;*/
+    }
+
+}

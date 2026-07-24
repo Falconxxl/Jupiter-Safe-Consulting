@@ -1,0 +1,222 @@
+/* =====================================================================
+   OBJECTIF SECTION — "Nos objectifs et cibles"
+   NatProTech design system
+   -----------------------------------------------------------------
+   Colors
+     --obj-blue        : #2175D9  (section background)
+     --obj-blue-light  : #8ECDF5  (label + title accent)
+     --obj-white       : #FFFFFF  (body text, icon circle)
+===================================================================== */
+
+.objectif {
+    --obj-blue: #2175d9;
+    --obj-blue-light: #8ecdf5;
+    --obj-white: #ffffff;
+
+    background-color: var(--obj-blue);
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 100px 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.objectif * {
+    box-sizing: border-box;
+}
+
+.objectif__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+}
+
+/* ---------------------------------------------------------------------
+   LEFT COLUMN — label + title
+--------------------------------------------------------------------- */
+
+.objectif__left {
+    flex: 0 0 34%;
+    max-width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.objectif__title {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #43defb;
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------------
+   RIGHT COLUMN — intro text + checklist
+--------------------------------------------------------------------- */
+
+.objectif__right {
+    flex: 1;
+    min-width: 0;
+}
+
+.objectif__intro {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--obj-white);
+    margin: 0 0 40px;
+}
+
+.objectif__intro-lead {
+    font-weight: 700;
+    color: var(--obj-blue-light);
+}
+
+.objectif__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.objectif__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.objectif__icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    margin-top: 2px;
+}
+
+.objectif__icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.objectif__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--obj-white);
+}
+
+/* =======================================================================
+   RESPONSIVE
+======================================================================= */
+
+/* Large desktop / 2K+ */
+@media (min-width: 1920px) {
+    .objectif__container {
+        max-width: 1680px;
+        gap: 130px;
+    }
+
+    .objectif__title {
+        font-size: 52px;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .objectif__container {
+        padding: 0 56px;
+        gap: 64px;
+    }
+
+    .objectif__title {
+        font-size: 38px;
+    }
+}
+
+/* Small laptop / large tablet */
+@media (max-width: 992px) {
+    .objectif {
+        padding: 80px 0;
+    }
+
+    .objectif__container {
+        gap: 44px;
+    }
+
+    .objectif__left {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .objectif__title {
+        font-size: 32px;
+    }
+}
+
+/* Tablet portrait — columns stack */
+@media (max-width: 768px) {
+    .objectif {
+        padding: 64px 0;
+    }
+
+    .objectif__container {
+        flex-direction: column;
+        padding: 0 32px;
+        gap: 40px;
+    }
+
+    .objectif__left {
+        flex: 1 1 auto;
+        max-width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .objectif__title {
+        font-size: 34px;
+    }
+}
+
+/* Mobile — 430 / 390 / 375 / 320 */
+@media (max-width: 600px) {
+    .objectif {
+        padding: 56px 0;
+    }
+
+    .objectif__container {
+        padding: 0 20px;
+        gap: 32px;
+    }
+
+    .objectif__title {
+        font-size: 28px;
+    }
+
+    .objectif__intro {
+        margin-bottom: 28px;
+    }
+
+    .objectif__list {
+        gap: 20px;
+    }
+
+    .objectif__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .objectif__title {
+        font-size: 25px;
+    }
+}

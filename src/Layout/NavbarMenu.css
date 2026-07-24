@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+
+    margin:0;
+    padding:0;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.Navbar1 {
+
+    width:100%;
+
+    height:12vh;
+
+    background-color:#1c1c1c;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:fixed;
+
+    top:50px;
+    left:0;
+
+
+    z-index:400;
+
+}
+
+
+
+.Container-NavbarMenu {
+
+
+    width:100%;
+
+    height:12vh;
+
+    background-color:white;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.logo-falcon-NavMenu {
+
+    height:50px;
+
+}
+
+
+/*---------------- MENU ----------------*/
+
+
+.Container-buttons-NavbarMenu {
+
+    display:flex;
+
+    color:white;
+
+    gap:35px;
+
+    font-size:15px;
+
+    list-style-type:none;
+
+    font-family: "Roboto", sans-serif;
+
+    font-weight:300;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.button-Menu {
+
+    /*color:#5a607c;*/
+
+    font-size:17px;
+
+    text-decoration:none;
+
+    font-weight:300;
+
+    color: #052045;
+
+    font-family: "Poppins", sans-serif;
+
+    /*font-family: "Roboto", sans-serif;*/
+    /*font-family: "Montserrat", sans-serif;*/
+
+}
+
+
+
+.button-Menu:hover {
+
+    color:#2175d9;
+
+}
+
+
+
+.button-Menu.active {
+
+    color:#2175d9;
+
+}
+
+
+/*--------------- DROPDOWN ----------------*/
+
+
+.dropbtn {
+
+    color:#799da9;
+
+    padding:10px;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size:15px;
+
+    font-weight:300;
+
+    border:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+/*.dropdown {*/
+
+/*    position:relative;*/
+
+/*    display:inline-block;*/
+
+/*    font-family: "Roboto", sans-serif;*/
+
+/*    font-size:15px;*/
+
+/*    font-weight:300;*/
+
+/*    cursor:pointer;*/
+
+/*    padding:10px 16px;*/
+
+/*}*/
+
+
+.dropdown {
+
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+    padding:10px 16px;
+
+    font-family:"Poppins", sans-serif;
+    font-size:17px;
+    font-weight:300;
+    color:#052045;
+
+}
+
+
+
+.dropdown-content {
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    background:white;
+
+    color:black;
+
+    min-width:303px;
+
+    height:295px;
+
+    box-shadow:0 8px 16px rgba(0,0,0,0.2);
+
+    z-index:1000;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-10px) scale(0.95);
+
+    pointer-events:none;
+
+    transition:all 0.3s ease;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+/*.dropdown-content {*/
+
+/*    position:absolute;*/
+
+/*    top:100%;*/
+
+/*    left:0;*/
+
+/*    background:white;*/
+
+/*    color:black;*/
+
+/*    min-width:290px;*/
+
+/*    height:295px;*/
+
+/*    box-shadow:0 8px 16px rgba(0,0,0,0.2);*/
+
+/*    z-index:1000;*/
+
+/*    opacity:0;*/
+
+/*    visibility:hidden;*/
+
+/*    transform:translateY(-10px) scale(0.95);*/
+
+/*    pointer-events:none;*/
+
+/*    transition:all 0.3s ease;*/
+
+/*    display:flex;*/
+
+/*    flex-direction:column;*/
+
+/*    justify-content:center;*/
+
+/*}*/
+
+
+
+
+.Services-Link {
+
+
+    padding:7px 20px;
+
+    text-decoration:none;
+
+    display:block;
+
+    /*color:#5a607c;*/
+    color:#052045;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size:16px;
+
+    font-weight:300;
+
+}
+
+
+
+.Services-Link:hover {
+
+    color:#2175d9;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0) scale(1);
+
+    pointer-events:auto;
+
+}
+
+
+/* The PDF dropdown items are real <button> elements (so a click can be
+   intercepted for the confirmation modal) instead of <NavLink>s.
+   This resets the native button chrome so they look identical to the
+   .Services-Link <a> tags used elsewhere in the menu. */
+
+button.Services-Link {
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    font-family:"Roboto", sans-serif;
+
+}
+
+
+/*--------------- CONTACT ----------------*/
+
+
+.Container-ContactUs-Languages {
+
+
+    display:flex;
+
+    gap:40px;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.button-menu-ContactUs {
+
+    background-color:#2175d9;
+
+    color:white;
+
+    padding:15px 25px;
+
+    /*border-radius:7px;*/
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:16px;
+
+    text-decoration:none;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-weight:500;
+
+}
+
+.button-menu-ContactUs:hover {
+    background-color: #1e345e;
+}
+
+
+/*--------------- PDF DOWNLOAD CONFIRMATION MODAL ----------------*/
+
+
+.pdf-confirm-overlay {
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(5, 32, 69, 0.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:2000;
+
+    padding:20px;
+
+}
+
+
+.pdf-confirm-modal {
+
+    position:relative;
+
+    background:white;
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:40px 32px 32px;
+
+    box-shadow:0 24px 50px rgba(5, 32, 69, 0.25);
+
+    text-align:center;
+
+    font-family:"Poppins", sans-serif;
+
+}
+
+
+.pdf-confirm-close {
+
+    position:absolute;
+
+    top:14px;
+
+    right:14px;
+
+    width:32px;
+
+    height:32px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    color:#666666;
+
+    font-size:16px;
+
+    transition:color 0.2s ease;
+
+}
+
+
+.pdf-confirm-close:hover {
+
+    color:#2175d9;
+
+}
+
+
+.pdf-confirm-text {
+
+    font-size:17px;
+
+    font-weight:400;
+
+    color:#052045;
+
+    line-height:1.6;
+
+    margin:0 0 28px;
+
+}
+
+
+.pdf-confirm-text strong {
+
+    font-weight:600;
+
+    color:#2175d9;
+
+}
+
+
+.pdf-confirm-actions {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:16px;
+
+}
+
+
+.pdf-confirm-btn {
+
+    flex:1;
+
+    padding:13px 20px;
+
+    border:none;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    font-family:"Poppins", sans-serif;
+
+    cursor:pointer;
+
+    transition:background-color 0.2s ease, color 0.2s ease;
+
+}
+
+
+.pdf-confirm-btn--yes {
+
+    background-color:#2175d9;
+
+    color:white;
+
+}
+
+
+.pdf-confirm-btn--yes:hover {
+
+    background-color:#1e345e;
+
+}
+
+
+.pdf-confirm-btn--no {
+
+    background-color:#f3f3f3;
+
+    color:#052045;
+
+}
+
+
+.pdf-confirm-btn--no:hover {
+
+    background-color:#e2e2e2;
+
+}
+
+
+@media screen and (max-width:480px){
+
+    .pdf-confirm-modal {
+
+        padding:32px 22px 26px;
+
+    }
+
+    .pdf-confirm-actions {
+
+        flex-direction:column;
+
+    }
+
+}
+
+
+/*--------------- TABLET ----------------*/
+
+
+@media screen and (max-width:1220px){
+
+
+    .Container-buttons-NavbarMenu {
+
+        gap:15px;
+
+        font-size:14px;
+
+    }
+
+
+    .logo-falcon-NavMenu {
+
+        height:30px;
+
+    }
+
+
+    .button-menu-ContactUs {
+
+        font-size:14px;
+
+    }
+
+}
+
+
+
+/*--------------- MOBILE ----------------*/
+
+
+@media screen and (max-width:945px){
+
+
+    .Navbar1 {
+
+        display:none;
+
+    }
+
+
+    .Container-NavbarMenu {
+
+        display:none;
+
+    }
+
+}

@@ -1,0 +1,300 @@
+/* ==========================================================================
+   ServiceComparison.css
+   "Van oud naar nieuw" — before/after comparison section
+
+   Uses the same red (#D62828), Poppins font, radius/shadow language as the
+   rest of the Pasha Bouw site. Adjust the variables below if your real
+   Home.css uses slightly different values.
+   ========================================================================== */
+
+:root {
+    --sc-red: #D62828;
+    --sc-black: #000000;
+    --sc-gray: #555555;
+    --sc-border: #E5E5E5;
+    --sc-white: #FFFFFF;
+
+    --sc-font: 'Poppins', sans-serif;
+
+    --sc-shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.06);
+    --sc-shadow-md: 0 14px 32px rgba(0, 0, 0, 0.14);
+
+    --sc-transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+.service-comparison {
+    width: 100%;
+    height: 110vh;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.service-comparison-inner {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.service-comparison-inner.service-comparison-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.service-comparison-header {
+    padding: 0 140px;
+    margin-bottom: 48px;
+}
+
+.service-comparison-title {
+    font-family: var(--sc-font);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.2;
+    color: black;
+    margin: 0 0 20px;
+}
+
+.service-comparison-paragraph {
+    font-family: var(--sc-font);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--sc-gray);
+    max-width: 1400px;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Comparison cards
+   ========================================================================== */
+
+.comparison-container {
+    width: 1400px;
+    max-width: calc(100% - 200px);
+    height: 500px;
+    /*margin: 0 100px;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 5%;
+}
+
+.comparison-card {
+    flex: 1 1 650px;   /* grow:1, shrink:1, basis:650px */
+    min-width: 0;       /* indispensable pour que le shrink fonctionne réellement */
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid red;
+    box-shadow: var(--sc-shadow-sm);
+    overflow: hidden;
+    transition: var(--sc-transition);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison-card-title {
+    font-family: var(--sc-font);
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--sc-black);
+    text-align: left;
+    margin: 0 0 20px 0;   /* plus besoin de margin latérale, le padding du parent s'en charge */
+}
+
+.comparison-image-wrapper {
+    width: 100%;          /* 100% de l'espace restant dans la carte, déjà réduit par le padding */
+    flex: 1;               /* prend toute la hauteur restante sous le titre */
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.comparison-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.comparison-card:hover .comparison-image {
+    transform: scale(1.06);
+}
+
+/* ==========================================================================
+   CTA button — matches Home page "Vraag een offerte aan" button
+   ========================================================================== */
+
+.comparison-cta-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.comparison-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 300px;
+    height: 60px;
+    background-color: red;
+    color: var(--sc-white);
+    font-family: var(--sc-font);
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid red;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: var(--sc-transition);
+}
+
+.comparison-cta-arrow {
+    font-size: 18px;
+    transition: var(--sc-transition);
+}
+
+.comparison-cta-btn:hover {
+    background-color: var(--sc-white);
+    color: red;
+    border: 2px solid red;
+}
+
+.comparison-cta-btn:hover .comparison-cta-arrow {
+    color: red;
+}
+
+.comparison-cta-btn:focus-visible {
+    outline: 3px solid var(--sc-black);
+    outline-offset: 3px;
+}
+
+/* ==========================================================================
+   Responsive — Tablet
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    .comparison-container {
+        width: 100%;
+    }
+
+    .comparison-card {
+        width: 100%;
+    }
+
+    .comparison-image-wrapper {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .service-comparison {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .service-comparison-header {
+        padding: 0 60px;
+    }
+
+    .service-comparison-title {
+        font-size: 44px;
+    }
+
+    .comparison-container {
+        height: 300px;
+        margin: 0 60px;
+        max-width: calc(100% - 120px);
+    }
+
+    .comparison-card {
+        height: 300px;
+    }
+
+    .comparison-image-wrapper {
+        height: 200px;
+    }
+}
+
+/* ==========================================================================
+   Responsive — Mobile
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .service-comparison {
+        padding: 70px 0;
+    }
+
+    .service-comparison-header {
+        padding: 0 24px;
+        /*text-align: center;*/
+    }
+
+    .service-comparison-paragraph {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-comparison-title {
+        font-size: 34px;
+    }
+
+    .comparison-container {
+        flex-direction: column;
+        height: auto;
+        margin: 0 24px;
+        max-width: calc(100% - 48px);
+        gap: 20px;
+        background-color: white;
+        border: 1px solid red;
+    }
+
+    .comparison-card {
+        flex: none;
+        width: 100%;
+        height: auto;
+        border: none;
+        padding: 0;        /* supprime tout padding interne sur mobile */
+        /*background-color: red;*/
+    }
+
+    .comparison-image-wrapper {
+        flex: 0 0 220px;
+        width: 100%;
+        height: 220px;
+        background-color: #799da9;
+    }
+
+    .comparison-cta-wrapper {
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 420px) {
+    .service-comparison-title {
+        font-size: 28px;
+    }
+
+    .comparison-card-title {
+        font-size: 22px;
+    }
+}

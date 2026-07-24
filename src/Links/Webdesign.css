@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-color: #f3bb2f;*/
+}
+
+.webdesign-wrapper.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.webdesign-wrapper.visible {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+
+.Container-webdesign {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.desktop-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-bottom: 1px solid #f3bb2f;
+}
+
+.hero-content-webdesign {
+    position: absolute;
+    top: 34%;               /* placé à 40% du haut */
+    left: 100px;            /* 250px depuis la gauche */
+    color: black;
+    height: auto;
+}
+
+.hero-content-webdesign h1 {
+    font-family:"Poppins", sans-serif;
+    font-size: 60px;      /* ou 7vw si tu veux responsive */
+    font-weight: 400;     /* ultra-thin */
+    color: black;
+    line-height: 1.0;
+    margin-bottom: 50px;
+}
+
+.webdesign-paragraphe-desktop {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 70px;   /* espace entre p et bouton */
+    font-weight: 500;
+}
+
+.webdesign-paragraphe-mobile {
+    display:none;
+}
+
+.cta-btn-webdesign {
+    display: inline-block;
+
+    text-decoration: none;
+    padding: 20px 40px;
+    font-family: "Figtree", sans-serif;
+    border: 3px solid #f3bb2f;
+    background-color: black;
+    border-radius: 60px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.cta-btn-webdesign:hover {
+    background-color: #0091ff;
+    color: black;
+    border: 3px solid black;
+}
+
+.scroll-down-webdesign {
+    position: absolute;
+    bottom: 30px;
+    left: 92%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.scroll-down-webdesign:hover {
+    background-color: #0091ff;
+    color: black;
+    border: 3px solid black;
+}
+
+/*!*--------------------------------------------*!*/
+
+
+/*-------------------------------------------*/
+
+@media screen and (max-width:940px) {
+
+
+    .Container-Webdesign {
+        width: 100%;
+        height: 80vh;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+
+        .hero-content h1 { font-size: 4rem; margin-bottom: 50px; }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 80px; }
+    }
+
+    .hero-content-webdesign {
+        position: absolute;
+        top: 13%;               /* placé à 40% du haut */
+        left: 0px;            /* 250px depuis la gauche */
+        color: black;
+        height: auto;
+        padding: 40px;
+    }
+
+    .hero-content-webdesign h1 {
+        font-size: 48px;      /* ou 7vw si tu veux responsive */
+        margin-bottom: 40px;
+    }
+
+    .webdesign-paragraphe-desktop {
+        display:none;
+    }
+
+    .webdesign-paragraphe-mobile {
+        display: block; /* ✅ RÉACTIVE LE PARAGRAPHE MOBILE */
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: black;
+        margin-bottom: 50px;
+        font-weight: 500;
+    }
+
+    .scroll-down-webdesign {
+        bottom: 200px;
+        left: 90%;
+    }
+
+}

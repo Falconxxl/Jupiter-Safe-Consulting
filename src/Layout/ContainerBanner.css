@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-banner {
+    width: 100%;
+    height: auto;
+    background-color: #757575;
+    /*background-color: transparent;*/
+    box-sizing: border-box;
+    /*background-image: url("../Assets/banner19.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-video-boucle {
+    width: 100%;
+    height: auto;
+    margin-top: 160px;
+}
+
+.banner-video-boucle-mobile {
+    display: none;
+}
+
+/*----------------------------------------*/
+
+/* Overlay (contenu au-dessus de la vidéo) */
+.banner-overlay {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    /*text-align: center;*/
+    z-index: 2; /* au-dessus de la vidéo */
+    height: auto;
+    gap: 20px;
+}
+
+.banner-overlay h1 {
+    font-size: 5.0rem;
+    margin-bottom: 30px;
+    /*font-family: "poppin", sans-serif;*/
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.banner-overlay p {
+    font-size: 1.4rem;
+    /*margin-bottom: 20px;*/
+    font-family: "Figtree", sans-serif;
+    /*margin-top: 30px;*/
+    margin-bottom: 70px;
+}
+
+.btn-banner-home {
+    padding: 20px 55px;
+    /*border: none;*/
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    /*border: 2px solid #0091ff;*/
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+    /*margin-left: 50%;*/
+    transition: transform 0.3s ease, background-color0.3s ease;
+}
+
+.btn-banner-home:hover {
+    background-color: #0091ff;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-scroll-banner {
+    position: absolute;
+    bottom: 40px;   /* espace avec le bas */
+    left: 50%;      /* centré horizontalement */
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; /* au-dessus de la vidéo */
+}
+
+.btn-scroll-banner:hover {
+    background-color: #0091ff;
+    color: white;
+}
+
+
+/*-------------------------------------------*/
+
+@media screen and (max-width:940px) {
+
+    .Container-banner {
+        height: auto;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+    }
+
+    .banner-video-boucle-mobile {
+        display: block; /* <-- il manquait ça */
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .banner-video-boucle {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:940px) {
+
+    .Container-banner {
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 150px;
+    }
+
+    .banner-video-boucle-mobile {
+        display: block; /* <-- il manquait ça */
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .banner-video-boucle {
+        display: none;
+    }
+
+    /*----------------------------------------*/
+
+    /* Overlay (contenu au-dessus de la vidéo) */
+    .banner-overlay {
+        /*position: absolute;*/
+        top: 57%;
+        left: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background-color: red;*/
+    }
+
+    .banner-overlay h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    .banner-overlay p {
+        font-size: 1.0rem;
+        /*margin-top: 30px;*/
+        margin-bottom: 50px;
+    }
+
+    .btn-banner-home {
+        padding: 10px 35px;
+    }
+    .btn-scroll-banner {
+
+        /*bottom: 40px;   !* espace avec le bas *!*/
+        left: 90%;      /* centré horizontalement */
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:940px) {
+
+    .Container-banner {
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 150px;
+    }
+
+    .banner-video-boucle-mobile {
+        display: block; /* <-- il manquait ça */
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .banner-video-boucle {
+        display: none;
+    }
+
+    /*----------------------------------------*/
+
+    /* Overlay (contenu au-dessus de la vidéo) */
+    .banner-overlay {
+        /*position: absolute;*/
+        top: 57%;
+        left: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background-color: red;*/
+    }
+
+    .banner-overlay h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    .banner-overlay p {
+        font-size: 1.0rem;
+        /*margin-top: 30px;*/
+        margin-bottom: 50px;
+    }
+
+    .btn-banner-home {
+        padding: 10px 35px;
+    }
+    .btn-scroll-banner {
+
+        /*bottom: 40px;   !* espace avec le bas *!*/
+        left: 90%;      /* centré horizontalement */
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+}

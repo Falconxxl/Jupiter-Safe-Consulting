@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-Whatsapp-icon {
+    /*background-color: #104c94;*/
+    background-color: #02bf5c;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    top: 24vh;
+    left: 94vw;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Whatsapp-icon:hover  {
+    background-color: #1e345e;
+}
+
+
+.Container-Whatsapp-icon i {
+    font-size: 36px;
+    color: white;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.Container-Whatsapp-icon:hover i {
+    /*color: #0b3f88;*/
+    /*color: black;*/
+    transform: scale(1.15);
+}
+
+
+
+
+/*-----------@media-query------------------------------*/
+
+@media screen and (max-width:900px) {
+    .Container-Whatsapp-icon {
+        width: 60px;
+        height: 60px;
+
+        top: 17vh;
+        left: 84vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

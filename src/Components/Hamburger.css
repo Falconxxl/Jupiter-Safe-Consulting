@@ -1,0 +1,678 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+/* ================================
+
+   BASE (desktop)
+
+================================ */
+
+.navbar-hamburger {
+
+    position: relative;
+
+    z-index: 2000;
+
+}
+
+
+
+.menu-icon {
+
+    font-size: 1.8rem;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 1rem;
+
+    z-index: 2100;
+
+    position: relative;
+
+    color: black;
+
+}
+
+
+
+.menu {
+
+    position: fixed;
+
+    top: 0;
+
+    left: -100%;
+
+    height: 100vh;
+
+    width: 100%;
+
+    background: white;
+
+    color: #111;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    padding-top: 40px;
+
+    transition: left 0.3s ease-in-out;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+.menu.open {
+
+    left: 0;
+
+}
+
+
+
+.menu ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    width: 100%;
+
+}
+
+
+
+.menu ul li {
+
+    width: 100%;
+
+}
+
+
+
+.menu-button {
+
+    width: 100%;
+
+    text-align: left;
+
+    padding: 14px 20px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #111;
+
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+.submenu {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height 0.4s ease-in-out;
+
+    background: white;
+
+}
+
+
+
+.submenu.open {
+
+    max-height: 400px;
+
+}
+
+
+
+.submenu li {
+
+    padding: 10px 40px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #1c6077;
+
+}
+
+
+/* The "Télécharger PDF" submenu items are real <button> elements
+   (so a click can be intercepted for the confirmation modal) instead
+   of <NavLink>s. This resets the native button chrome and reuses the
+   same visual style as .Submenu-button-hamburger. */
+
+.Submenu-button-hamburger--pdf {
+
+    width: 100%;
+
+    background: none;
+
+    border: none;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    font: inherit;
+
+    color: inherit;
+
+}
+
+
+
+/* ================================
+
+   MOBILE (max 945px)
+
+================================
+
+   Navbar2Mobile      → top: 0,    height: 50px
+
+   NavbarMenuMobile   → top: 50px, height: 9vh
+
+   Menu hamburger     → top: calc(50px + 9vh)
+
+================================ */
+
+@media screen and (max-width: 945px) {
+
+
+
+    .navbar-hamburger {
+
+        position: relative;
+
+        z-index: 2000;
+
+    }
+
+
+
+    .menu-icon {
+
+        background: none;
+
+        border: none;
+
+        cursor: pointer;
+
+        z-index: 2100;
+
+        position: relative;
+
+        color: black;
+
+        font-weight: 800;
+
+        padding: 0;
+
+        font-size: 1.6rem;
+
+    }
+
+
+
+    /* ✅ Menu collé exactement sous NavbarMenuMobile */
+
+    .menu {
+
+        position: fixed;
+
+        top: calc(50px + 9vh);
+
+        left: -100%;
+
+        height: calc(100vh - 50px - 9vh);
+
+        width: 100%;
+
+        background: #2175d9;
+
+        color: white;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        padding-top: 0;
+
+        margin-top: 0;
+
+        transition: left 0.3s ease-in-out;
+
+        font-family: 'Montserrat', sans-serif;
+
+        overflow-y: auto;
+
+    }
+
+
+
+    .menu.open {
+
+        left: 0;
+
+    }
+
+
+
+    .menu ul {
+
+        list-style: none;
+
+        padding: 0;
+
+        margin: 0;
+
+        width: 100%;
+
+    }
+
+
+
+    .menu ul li {
+
+        width: 100%;
+
+    }
+
+
+
+    /* Boutons menu principal */
+
+    .menu-button,
+
+    .menu-button:link,
+
+    .menu-button:visited {
+
+        display: block;
+
+        width: 100%;
+
+        text-align: left;
+
+        padding: 14px 24px;
+
+        font-size: 20px;
+
+        font-weight: 600;
+
+        background: none;
+
+        border: none;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        cursor: pointer;
+
+        color: white;
+
+        font-family: "Montserrat", sans-serif;
+
+        text-decoration: none;
+
+    }
+
+
+
+    /* ✅ Sous-menu — fond sombre bien visible + gap réduit */
+
+    .submenu {
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        transition: max-height 0.4s ease-in-out;
+
+        background-color: #1c1c1c;
+
+    }
+
+
+
+    .submenu.open {
+
+        max-height: 500px;
+
+    }
+
+
+
+    /* ✅ Liens submenu — padding réduit pour gap de ~3-4mm */
+
+    .submenu li {
+
+        padding: 0;
+
+        margin: 0;
+
+        list-style: none;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    }
+
+
+
+    .submenu li:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+
+    .Submenu-button-hamburger {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 9px 40px;   /* ← ~3-4mm de gap entre les liens */
+
+        font-size: 15px;
+
+        font-weight: 500;
+
+        color: white;
+
+        text-decoration: none;
+
+        font-family: "Montserrat", sans-serif;
+
+        background-color: #1c1c1c;  /* ← visible sur fond rouge */
+
+    }
+
+
+
+    .Submenu-button-hamburger:hover {
+
+        background-color: #2a2a2a;
+
+    }
+
+}
+
+
+
+/* ================================
+
+   PETITS MOBILES (max 480px)
+
+================================ */
+
+@media screen and (max-width: 480px) {
+
+
+
+    /* Navbar2Mobile height reste 50px, NavbarMenuMobile passe à 50px fixe */
+
+    .menu {
+
+        /*top: 100px;*/
+
+        top: calc(50px + 9vh);
+
+        height: calc(100vh - 100px);
+
+    }
+
+
+
+    .menu-button,
+
+    .menu-button:link,
+
+    .menu-button:visited {
+
+        font-size: 18px;
+
+        padding: 15px 20px;
+
+    }
+
+
+
+    .Submenu-button-hamburger {
+
+        font-size: 14px;
+
+        padding: 10px 36px;
+
+    }
+
+}
+
+
+/* ================================
+
+   PDF DOWNLOAD CONFIRMATION MODAL
+
+================================ */
+
+.pdf-confirm-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(5, 32, 69, 0.55);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 2200;
+
+    padding: 20px;
+
+}
+
+
+.pdf-confirm-modal {
+
+    position: relative;
+
+    background: white;
+
+    width: 100%;
+
+    max-width: 420px;
+
+    padding: 40px 32px 32px;
+
+    box-shadow: 0 24px 50px rgba(5, 32, 69, 0.25);
+
+    text-align: center;
+
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+.pdf-confirm-close {
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 14px;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #666666;
+
+    font-size: 16px;
+
+    transition: color 0.2s ease;
+
+}
+
+
+.pdf-confirm-close:hover {
+
+    color: #2175d9;
+
+}
+
+
+.pdf-confirm-text {
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: #052045;
+
+    line-height: 1.6;
+
+    margin: 0 0 28px;
+
+}
+
+
+.pdf-confirm-text strong {
+
+    font-weight: 600;
+
+    color: #2175d9;
+
+}
+
+
+.pdf-confirm-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+
+}
+
+
+.pdf-confirm-btn {
+
+    flex: 1;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    font-family: "Montserrat", sans-serif;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+
+
+.pdf-confirm-btn--yes {
+
+    background-color: #2175d9;
+
+    color: white;
+
+}
+
+
+.pdf-confirm-btn--yes:hover {
+
+    background-color: #1e345e;
+
+}
+
+
+.pdf-confirm-btn--no {
+
+    background-color: #f3f3f3;
+
+    color: #052045;
+
+}
+
+
+.pdf-confirm-btn--no:hover {
+
+    background-color: #e2e2e2;
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .pdf-confirm-modal {
+
+        padding: 32px 22px 26px;
+
+    }
+
+    .pdf-confirm-actions {
+
+        flex-direction: column;
+
+    }
+
+}
