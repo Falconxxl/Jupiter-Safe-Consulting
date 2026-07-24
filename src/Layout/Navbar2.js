@@ -61,17 +61,17 @@ function Navbar2() {
             <div className="Navbar2-right">
 
 
-                <a href="#" className="Navbar2-social">
+                <a href="https://www.linkedin.com/login/?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnexteclat%2Fabout%2F%3FviewAsMember%3Dtrue" className="Navbar2-social">
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
 
 
-                <a href="https://www.instagram.com/pashabouw" className="Navbar2-social">
+                <a href="https://www.instagram.com/nexteclat.digital?igsh=dGlzeW1hMmEwbm5t&utm_source=qr" className="Navbar2-social">
                     <i className="fa-brands fa-instagram"></i>
                 </a>
 
 
-                <a href="#" className="Navbar2-social">
+                <a href="https://www.tiktok.com/@nexteclat.digital?_r=1&_t=ZG-95SJ0Xoz2tk" className="Navbar2-social">
                     <i className="fa-brands fa-tiktok"></i>
                 </a>
 

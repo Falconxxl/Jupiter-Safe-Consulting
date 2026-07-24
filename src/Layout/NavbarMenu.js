@@ -5,9 +5,9 @@ import {NavLink} from "react-router-dom";
 import logo from '../Assets/NatProteg_logo3.png';
 // import logo_falcon_Beat from '../Assets/Logo-falconxxl-beat2.png';
 import React, { useState } from 'react';
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 // import LanguageDropdown from "../Components/LanguageDropdown"
-import Navbar2 from "./Navbar2";
+// import Navbar2 from "./Navbar2";
 // import { FaTimes, FaBars } from "react-icons/fa";
 
 
@@ -56,7 +56,7 @@ function NavbarMenu() {
 
     const [click, setClick] = useState(false)
 
-    const handleClick = () => setClick(!click)
+    // const handleClick = () => setClick(!click)
 
     const closeMenu = () => setClick(false)
 
@@ -71,7 +71,7 @@ function NavbarMenu() {
 
     // ------------------------languages selector--------------------------------------
 
-    const { i18n, t } = useTranslation();
+    // const { i18n, t } = useTranslation();
 
     // ------------------------PDF download confirmation--------------------------------
 

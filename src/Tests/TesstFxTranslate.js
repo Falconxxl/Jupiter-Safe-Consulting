@@ -1,14 +1,14 @@
 import './TesstFxTranslate.css';
 import NavbarMenu from "../Layout/NavbarMenu";
-import TopButton from "../Components/TopButton";
+// import TopButton from "../Components/TopButton";
 
 import { useTranslation } from "react-i18next";
 
-import LanguageSwitcher from "../Components/LanguageSwitcher";
-import Navbar2 from "../Layout/Navbar2";
-import Footer from "../Layout/Footer";
+// import LanguageSwitcher from "../Components/LanguageSwitcher";
+// import Navbar2 from "../Layout/Navbar2";
+// import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
-import OurWorkflow from "../Layout/OurWorkflow";
+// import OurWorkflow from "../Layout/OurWorkflow";
 
 
 function TesstFxTranslate() {
