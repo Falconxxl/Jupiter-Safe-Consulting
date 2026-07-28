@@ -21,8 +21,9 @@ import Navbar2Mobile from "../Layout/Navbar2Mobile";
 import TopButton from "../Components/TopButton";
 import Testimony from "../Layout/Testimony";
 import Experience from "../Layout/Experience";
-// import logo from "../Assets/NatProteg_logo3.png";
-// import logo2 from '../Assets/logo_natproteg_fond_blue2.png';
+import AllServicesDetails from "../Layout/AllServicesDetails";
+// import logo from "../Assets/Jupiter Safe_logo3.png";
+// import logo2 from '../Assets/logo_jupiter safe_fond_blue2.png';
 
 
 function Home() {
@@ -60,7 +61,7 @@ function Home() {
 
                     <div className="WhoAreWe-right">
                         <p>
-                            <strong>NatProtec</strong> est un cabinet de consultance spécialisé en Qualité, Hygiène, Sécurité et
+                            <strong>Jupiter Safe</strong> est un cabinet de consultance spécialisé en Qualité, Hygiène, Sécurité et
                             Environnement (QHSE), qui accompagne les organisations dans l'amélioration de leurs
                             performances et la maîtrise durable de leurs risques professionnels.
                         </p>
@@ -97,6 +98,13 @@ function Home() {
                                     {/*Développement des compétences des équipes à travers des formations adaptées.*/}
                                 </div>
                             </div>
+                            <div className="checklist-item">
+                                <i className="fa-solid fa-circle-check checklist-icon"></i>
+                                <div>
+                                    Formations des outils
+                                    {/*Développement des compétences des équipes à travers des formations adaptées.*/}
+                                </div>
+                            </div>
                         </div>
 
 
@@ -117,6 +125,7 @@ function Home() {
                 <OurWorkflow/>
                 <WhyUs/>
                 <Testimony/>
+                <AllServicesDetails/>
                 <TopButton/>
                 <WhatsappFunction/>
                 <Footer/>

@@ -8,6 +8,8 @@ import isoPresentationImage from "../Images/pic_nathaly_nice1.jpg";
 import Footer from "../Layout/Footer";
 import RequestAQuote from "../Components/RequestAQuote";
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
+import AllServicesDetails from "../Layout/AllServicesDetails";
+import WhatsappFunction from "../Components/WhatsappFunction";
 
 /* =====================================================================
    ICONS
@@ -123,6 +125,64 @@ const IconChart = () => (
     </svg>
 );
 
+/* ---------------------------------------------------------------------
+   NEW ICONS — ISO standards grid (badge check / tree / medical kit / fork+knife)
+--------------------------------------------------------------------- */
+
+const IconBadgeCheck = () => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M12 2.5L14.3 4.4L17.3 4.1L18 7L20.6 8.5L19.5 11.3L20.6 14.1L18 15.6L17.3 18.5L14.3 18.2L12 20.1L9.7 18.2L6.7 18.5L6 15.6L3.4 14.1L4.5 11.3L3.4 8.5L6 7L6.7 4.1L9.7 4.4L12 2.5Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M8.5 11.6L10.8 13.9L15.5 9.2"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+const IconPineTree = () => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M12 2.5L16.5 9H14L18 15H14.5L12 18.5L9.5 15H6L10 9H7.5L12 2.5Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinejoin="round"
+        />
+        <path d="M12 18.5V21.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+);
+
+const IconMedicalBag = () => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="8" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
+        <path d="M9 8V6.5C9 5.4 9.9 4.5 11 4.5H13C14.1 4.5 15 5.4 15 6.5V8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M12 11.5V16.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M9.5 14H14.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+);
+
+const IconForkKnife = () => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 2.5V10.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M5 2.5V7.5C5 8.6 5.9 9.5 7 9.5C8.1 9.5 9 8.6 9 7.5V2.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7 10.5V21.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+        <path
+            d="M17 2.5C15.3 2.5 14 4.6 14 7.2C14 9.3 15 11 16.4 11.5V21.5"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
 const ICONS = {
     warning: IconWarning,
     shield: IconShield,
@@ -130,6 +190,10 @@ const ICONS = {
     process: IconProcess,
     chart: IconChart,
     certificate: IconCertificate,
+    badgeCheck: IconBadgeCheck,
+    pineTree: IconPineTree,
+    medicalBag: IconMedicalBag,
+    forkKnife: IconForkKnife,
 };
 
 const ServiceIcon = ({ name }) => {
@@ -150,7 +214,7 @@ export const isoServiceData = {
     eyebrow: "Expertise QHSE",
     title: "Systèmes de management ISO",
     intro:
-        "NatProTech accompagne les entreprises dans la mise en place de systèmes de management conformes aux standards internationaux, pour structurer durablement leur qualité, leur sécurité et leur performance.",
+        "Jupiter Safe accompagne les entreprises dans la mise en place de systèmes de management conformes aux standards internationaux, pour structurer durablement leur qualité, leur sécurité et leur performance.",
     ctaPrimary: "Découvrir nos expertises",
     ctaSecondary: "Demander un audit",
 
@@ -158,30 +222,43 @@ export const isoServiceData = {
         title: "Qu'est-ce qu'un système de management ISO ?",
 
         text:
-            "Un système de management ISO est un cadre structuré permettant aux organisations d'améliorer durablement leur qualité, leur sécurité et leur performance. NatProTech accompagne les entreprises dans la mise en place de ces référentiels internationaux, de la préparation jusqu'à la certification.",
+            "Un système de management ISO est un cadre structuré permettant aux organisations d'améliorer durablement leur qualité, leur sécurité et leur performance. Jupiter Safe accompagne les entreprises dans la mise en place de ces référentiels internationaux, de la préparation jusqu'à la certification.",
+
+        ctaLabel: "Demander un audit",
 
         image: isoPresentationImage,
+
+        // Titre affiché à gauche de la grille des 4 normes ISO
+        standardsTitle: "Cliquez sur une norme ISO pour en savoir plus ->",
 
         standards: [
             {
                 code: "ISO 9001",
                 label: "Management de la qualité",
-                icon: "certificate"
+                icon: "badgeCheck",
+                description:
+                    "L'ISO 9001 définit les exigences d'un système de management de la qualité. Elle aide votre organisation à standardiser ses processus, à réduire les non-conformités et à améliorer en continu la satisfaction de ses clients.",
             },
             {
                 code: "ISO 14001",
                 label: "Management environnemental",
-                icon: "certificate"
+                icon: "pineTree",
+                description:
+                    "L'ISO 14001 encadre la mise en place d'un système de management environnemental. Elle permet d'identifier, de maîtriser et de réduire l'impact environnemental de vos activités, tout en respectant vos obligations réglementaires.",
             },
             {
                 code: "ISO 45001",
                 label: "Santé et sécurité au travail",
-                icon: "certificate"
+                icon: "medicalBag",
+                description:
+                    "L'ISO 45001 vise à prévenir les accidents de travail et les maladies professionnelles. Elle structure une démarche de santé et sécurité au travail centrée sur l'identification des risques et la protection de vos équipes.",
             },
             {
                 code: "ISO 22000",
                 label: "Sécurité alimentaire",
-                icon: "certificate"
+                icon: "forkKnife",
+                description:
+                    "L'ISO 22000 couvre le management de la sécurité des denrées alimentaires. Elle garantit la maîtrise des risques tout au long de la chaîne alimentaire, de la production jusqu'à la distribution.",
             },
         ],
     },
@@ -231,7 +308,7 @@ export const isoServiceData = {
     },
 
     advantages: {
-        title: "Pourquoi choisir NatProTech ?",
+        title: "Pourquoi choisir Jupiter Safe  ?",
         items: [
             { title: "20 ans d'expérience", text: "Une expertise éprouvée auprès d'organisations de toutes tailles." },
             { title: "Expertise terrain", text: "Des consultants présents auprès de vos équipes, pas seulement sur le papier." },
@@ -262,7 +339,7 @@ export const isoServiceData = {
                     "C'est une reconnaissance officielle, délivrée par un organisme accrédité, attestant qu'une organisation respecte les exigences d'une norme internationale (qualité, environnement, sécurité...).",
             },
             {
-                question: "Quelle est la durée d'accompagnement avec NatProTech ?",
+                question: "Quelle est la durée d'accompagnement avec Jupiter Safe ?",
                 answer:
                     "En moyenne entre 6 et 12 mois selon la maturité de vos processus existants et le nombre de normes visées, avec un suivi post-certification proposé en option.",
             },
@@ -277,7 +354,7 @@ export const isoServiceData = {
                     "Oui. Notre méthodologie s'adapte à la taille et à la maturité de chaque organisation, d'une PME en structuration à un grand groupe multi-sites.",
             },
             {
-                question: "Comment se déroule concrètement l'accompagnement NatProTech ?",
+                question: "Comment se déroule concrètement l'accompagnement Jupiter Safe ?",
                 answer:
                     "Nous suivons une méthode en cinq étapes : diagnostic, analyse des besoins, mise en place du système, formation des équipes, puis suivi et amélioration continue.",
             },
@@ -346,6 +423,9 @@ function ServiceDetail({ data = isoServiceData }) {
     const [timelineRef, timelineInView] = useInView(0.2);
     const [openQuote, setOpenQuote] = useState(false);
 
+    // Norme ISO actuellement affichée dans le modal descriptif (null = fermé)
+    const [activeStandard, setActiveStandard] = useState(null);
+
     const toggleFaq = (index) => {
         setOpenFaq((current) => (current === index ? -1 : index));
     };
@@ -390,7 +470,7 @@ function ServiceDetail({ data = isoServiceData }) {
             </section>
 
             {/* ---------------------------------------------------------- */}
-            {/* 2. PRÉSENTATION + NORMES ISO                                */}
+            {/* 2. PRÉSENTATION                                             */}
             {/* ---------------------------------------------------------- */}
             <section className="service-section service-presentation">
                 <div className="service-container service-presentation__grid">
@@ -401,10 +481,28 @@ function ServiceDetail({ data = isoServiceData }) {
                     <Reveal direction="up" className="service-presentation__body">
                         <h2 className="service-title">{data.presentation.title}</h2>
                         <p className="service-text">{data.presentation.text}</p>
+
+                        <button
+                            type="button"
+                            className="service-btn service-btn--outline-blue"
+                            onClick={() => setOpenQuote(true)}
+                        >
+                            {data.presentation.ctaLabel}
+                            <IconArrow />
+                        </button>
                     </Reveal>
                 </div>
+            </section>
 
-                <div className="service-container">
+            {/* ---------------------------------------------------------- */}
+            {/* 2b. GRILLE DES NORMES ISO — fond beige, titre + 2x2 cartes  */}
+            {/* ---------------------------------------------------------- */}
+            <section className="service-iso-standards">
+                <div className="service-container service-iso-standards__grid">
+                    <Reveal direction="up" className="service-iso-standards__heading">
+                        <h2 className="service-iso-standards__title">{data.presentation.standardsTitle}</h2>
+                    </Reveal>
+
                     <div className="service-iso-grid">
                         {data.presentation.standards.map((standard, index) => (
                             <Reveal
@@ -413,16 +511,63 @@ function ServiceDetail({ data = isoServiceData }) {
                                 delay={index * 90}
                                 className="service-iso-card"
                             >
-                <span className="service-iso-card__icon">
-                  <ServiceIcon name={standard.icon} />
-                </span>
-                                <h3 className="service-iso-card__code">{standard.code}</h3>
-                                <p className="service-iso-card__label">{standard.label}</p>
+                                <button
+                                    type="button"
+                                    className="service-iso-card__button"
+                                    onClick={() => setActiveStandard(standard)}
+                                    aria-haspopup="dialog"
+                                >
+                                    <span className="service-iso-card__icon">
+                                        <ServiceIcon name={standard.icon} />
+                                    </span>
+                                    <span className="service-iso-card__text">
+                                        <span className="service-iso-card__label">{standard.label}</span>
+                                        <span className="service-iso-card__code">{standard.code}</span>
+                                    </span>
+                                </button>
                             </Reveal>
                         ))}
                     </div>
                 </div>
             </section>
+
+            {/* ---------------------------------------------------------- */}
+            {/* MODAL — description de la norme ISO sélectionnée           */}
+            {/* ---------------------------------------------------------- */}
+            {activeStandard && (
+                <div
+                    className="iso-standard-modal-overlay"
+                    onClick={() => setActiveStandard(null)}
+                >
+                    <div
+                        className="iso-standard-modal"
+                        role="dialog"
+                        aria-modal="true"
+                        onClick={(event) => event.stopPropagation()}
+                    >
+                        <button
+                            type="button"
+                            className="iso-standard-modal__close"
+                            onClick={() => setActiveStandard(null)}
+                            aria-label="Fermer"
+                        >
+                            <i className="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <span className="iso-standard-modal__icon">
+                            <ServiceIcon name={activeStandard.icon} />
+                        </span>
+
+                        <h3 className="iso-standard-modal__title">
+                            {activeStandard.code} — {activeStandard.label}
+                        </h3>
+
+                        <p className="iso-standard-modal__text">
+                            {activeStandard.description}
+                        </p>
+                    </div>
+                </div>
+            )}
 
             {/* ---------------------------------------------------------- */}
             {/* 3. LES DÉFIS DES ENTREPRISES — left aligned                */}
@@ -490,7 +635,7 @@ function ServiceDetail({ data = isoServiceData }) {
             </section>
 
             {/* ---------------------------------------------------------- */}
-            {/* 5. POURQUOI CHOISIR NATPROTECH                              */}
+            {/* 5. POURQUOI CHOISIR JUPITER SAFE                            */}
             {/* ---------------------------------------------------------- */}
             <section className="service-section service-section--dark service-advantages">
                 <div className="service-container">
@@ -587,6 +732,8 @@ function ServiceDetail({ data = isoServiceData }) {
                 </div>
             </section>
 
+            <AllServicesDetails/>
+
             {/* ---------------------------------------------------------- */}
             {/* 8. CALL TO ACTION                                           */}
             {/* ---------------------------------------------------------- */}
@@ -607,6 +754,7 @@ function ServiceDetail({ data = isoServiceData }) {
             {/*        </Reveal>*/}
             {/*    </div>*/}
             {/*</section>*/}
+            <WhatsappFunction/>
             <Footer/>
         </div>
     );

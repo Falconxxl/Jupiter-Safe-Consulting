@@ -1,6 +1,6 @@
 /* =====================================================================
    SERVICE DETAIL — PREMIUM QHSE SERVICE PAGE
-   NatProTech design system
+   Jupiter Safe design system
    -----------------------------------------------------------------
    Palette
      --nat-blue        : #2175D9  (primary)
@@ -31,6 +31,11 @@
     --nat-shadow-hover: 0 18px 36px rgba(33, 117, 217, 0.16);
     --nat-radius: 5px;
     --nat-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Nouvelle palette dédiée à la section ISO / bouton "Demander un audit" */
+    --iso-accent: #0c65cf;
+    --iso-bg: #f7f5f0;
+    --iso-label: #575d71;
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--nat-text);
@@ -95,12 +100,14 @@
 }
 
 .service-eyebrow--light {
-    color: var(--nat-blue-light);
+    /*color: var(--nat-blue-light);*/
+    color: #60e6fc;
+
 }
 
 .service-title {
-    font-size: clamp(28px, 3.4vw, 42px);
-    font-weight: 600;
+    font-size: clamp(28px, 3.4vw, 45px);
+    font-weight: 500;
     line-height: 1.2;
     color: var(--nat-blue-dark);
     margin: 0 0 16px;
@@ -145,6 +152,7 @@
     font-weight: 500;
     text-decoration: none;
     white-space: nowrap;
+    cursor: pointer;
     transition: transform 0.3s var(--nat-ease), box-shadow 0.3s var(--nat-ease),
     background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
@@ -216,6 +224,21 @@
     border-color: var(--nat-white);
 }
 
+/* Bouton "Demander un audit" — section Présentation (contour bleu) */
+.service-btn--outline-blue {
+    background-color: transparent;
+    color: var(--iso-accent);
+    border: 2px solid var(--iso-accent);
+    padding: 16px 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.service-btn--outline-blue:hover {
+    background-color: var(--iso-accent);
+    color: var(--nat-white);
+}
+
 /* =======================================================================
    1. HERO — full-bleed blue, left aligned, minimal
 ======================================================================= */
@@ -232,9 +255,10 @@
 
 .service-hero__title {
     font-size: clamp(24px, 3.4vw, 52px);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.12;
-    color: var(--nat-blue-light);
+    /*color: #60e6fc;*/
+    color: white;
     margin: 0 0 24px;
     white-space: nowrap;
 }
@@ -265,19 +289,28 @@
 
 .service-hero__actions .service-btn--white {
     border: 2px solid white;
+    color: white;
+    background-color: transparent;
 }
 
 /* The 5cm left offset is kept at every breakpoint as requested.
    Only the non-breaking title is relaxed on narrow screens, since a
    fixed nowrap title would otherwise force horizontal overflow. */
 @media (max-width: 768px) {
+
+    .service-hero {
+        background-color: #0c65cf;
+        padding: 180px 0 110px;
+        margin-top: 80px;
+    }
+
     .service-hero__title {
         white-space: normal;
     }
 }
 
 /* =======================================================================
-   2. PRÉSENTATION + GRILLE DES NORMES ISO
+   2. PRÉSENTATION
 ======================================================================= */
 
 .service-presentation__grid {
@@ -285,7 +318,6 @@
     grid-template-columns: 0.9fr 1.1fr;
     gap: 72px;
     align-items: center;
-    margin-bottom: 64px;
 }
 
 .service-presentation__media img {
@@ -294,54 +326,174 @@
     box-shadow: var(--nat-shadow);
 }
 
+.service-presentation__body .service-text {
+    margin-bottom: 28px;
+}
+
+/* =======================================================================
+   2b. GRILLE DES NORMES ISO — fond beige, titre + 2x2 cartes
+======================================================================= */
+
+.service-iso-standards {
+    background-color: var(--iso-bg);
+    padding: 96px 0;
+    /*border-bottom: 1px solid #7bb7ff;*/
+}
+
+.service-iso-standards__grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.service-iso-standards__title {
+    font-size: clamp(30px, 3.6vw, 26px);
+    font-weight: 500;
+    line-height: 1.15;
+    color: #0c65cf;
+    margin: 0;
+}
+
 .service-iso-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .service-iso-card {
     background-color: var(--nat-white);
-    border: 1px solid var(--nat-border);
+    border: 2px solid transparent;
     border-radius: var(--nat-radius);
-    padding: 32px 26px;
     transition: border-color 0.3s ease, transform 0.35s var(--nat-ease), box-shadow 0.35s var(--nat-ease);
+    box-shadow: var(--nat-shadow);
 }
 
 .service-iso-card:hover {
-    border-color: var(--nat-blue);
-    transform: translateY(-6px);
+    border-color: var(--iso-accent);
     box-shadow: var(--nat-shadow-hover);
 }
 
+.service-iso-card__button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 28px 24px;
+    text-align: left;
+    font-family: inherit;
+}
+
 .service-iso-card__icon {
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
-    margin-bottom: 20px;
-    color: var(--nat-blue);
-    border: 1px solid var(--nat-border);
-    border-radius: var(--nat-radius);
+    width: 40px;
+    height: 40px;
+    color: var(--iso-accent);
 }
 
 .service-iso-card__icon svg {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+}
+
+.service-iso-card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.service-iso-card__label {
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--iso-label);
 }
 
 .service-iso-card__code {
     font-size: 18px;
-    font-weight: 600;
-    color: var(--nat-blue-dark);
-    margin: 0 0 8px;
+    font-weight: 700;
+    color: #111111;
 }
 
-.service-iso-card__label {
-    font-size: 14px;
+/* =======================================================================
+   MODAL — description de la norme ISO sélectionnée
+======================================================================= */
+
+.iso-standard-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 32, 69, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 1000;}
+
+.iso-standard-modal {
+    position: relative;
+    background-color: var(--nat-white);
+    border-radius: var(--nat-radius);
+    max-width: 480px;
+    width: 100%;
+    padding: 44px 36px 36px;
+    box-shadow: 0 24px 60px rgba(5, 32, 69, 0.25);
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.iso-standard-modal__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--nat-text-soft);
+    transition: color 0.2s ease;
+}
+
+.iso-standard-modal__close:hover {
+    color: var(--iso-accent);
+}
+
+.iso-standard-modal__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    color: var(--iso-accent);
+}
+
+.iso-standard-modal__icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.iso-standard-modal__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--nat-blue-dark);
+    margin: 0 0 14px;
+}
+
+.iso-standard-modal__text {
+    font-size: 15.5px;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.8;
     color: var(--nat-text-soft);
     margin: 0;
 }
@@ -354,6 +506,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+
 }
 
 .service-card {
@@ -495,7 +648,7 @@
 }
 
 /* =======================================================================
-   5. POURQUOI CHOISIR NATPROTECH — advantages
+   5. POURQUOI CHOISIR JUPITER SAFE — advantages
 ======================================================================= */
 
 .service-advantages__grid {
@@ -744,7 +897,10 @@
         gap: 52px;
     }
 
-    .service-iso-grid,
+    .service-iso-standards__grid {
+        gap: 44px;
+    }
+
     .service-challenges__grid,
     .service-benefits__grid {
         gap: 20px;
@@ -757,8 +913,8 @@
         padding: 80px 0;
     }
 
-    .service-iso-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .service-iso-standards {
+        padding: 72px 0;
     }
 
     .service-timeline__steps {
@@ -795,11 +951,19 @@
     .service-presentation__grid {
         grid-template-columns: 1fr;
         gap: 40px;
-        margin-bottom: 48px;
     }
 
     .service-presentation__media {
         order: -1;
+    }
+
+    .service-iso-standards__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .service-iso-standards__heading {
+        text-align: left;
     }
 
     .service-timeline__steps {
@@ -838,10 +1002,27 @@
         width: 100%;
     }
 
+    .service-btn--outline-blue {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .service-iso-standards {
+        padding: 56px 0;
+    }
+
     .service-iso-grid,
     .service-timeline__steps {
         grid-template-columns: 1fr;
-        row-gap: 24px;
+        row-gap: 16px;
+    }
+
+    .service-iso-card__button {
+        padding: 22px 20px;
+    }
+
+    .iso-standard-modal {
+        padding: 38px 24px 28px;
     }
 
     .service-advantages__grid,
@@ -871,6 +1052,10 @@
     }
 
     .service-title {
+        font-size: 26px;
+    }
+
+    .service-iso-standards__title {
         font-size: 26px;
     }
 }

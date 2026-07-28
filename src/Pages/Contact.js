@@ -56,7 +56,7 @@ function Contact() {
                             <p className="contact-intro-sub">
 
                                 Une question ? Notre équipe
-                                <strong style={{ color: 'black' }}> NatProtec </strong>
+                                <strong style={{ color: 'black' }}> Jupiter Safe </strong>
                                 est à votre écoute.
 
                             </p>
@@ -95,7 +95,7 @@ function Contact() {
 
                             {/* Email */}
 
-                            <a href="mailto:contact@natproteg.nl" className="contact-detail-row">
+                            <a href="mailto:contact@jupiter safe.nl" className="contact-detail-row">
 
                                 <div className="contact-detail-icon">
 
@@ -111,7 +111,7 @@ function Contact() {
                         </span>
 
                                     <span className="contact-detail-value">
-                            contact@natproteg.nl
+                            contact@jupiter safe.nl
                         </span>
 
                                 </div>

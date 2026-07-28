@@ -49,6 +49,10 @@ const pdfDocuments = [
         label: "Formations QHSE (PDF)",
         filePath: "https://www.dropbox.com/scl/fi/XXXXXXXX/formations-qhse.pdf?dl=1",
     },
+    {
+        label: "Formations des outils (PDF)",
+        filePath: "https://www.dropbox.com/scl/fi/XXXXXXXX/formations-qhse.pdf?dl=1",
+    },
 ];
 
 
@@ -140,6 +144,8 @@ function Hamburger() {
                             <li><NavLink to="#" className="Submenu-button-hamburger">Gestion des risques</NavLink></li>
 
                             <li><NavLink to="#" className="Submenu-button-hamburger">Formations QHSE</NavLink></li>
+
+                            <li><NavLink to="#" className="Submenu-button-hamburger">Formations des outils</NavLink></li>
 
                             <li>
 
