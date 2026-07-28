@@ -2,7 +2,7 @@ import './NavbarMenu.css';
 // import '../App.css';
 import {NavLink} from "react-router-dom";
 // import {Link} from 'react-scroll';
-import logo from '../Assets/NatProteg_logo3.png';
+import logo from '../Assets/1.LOGO-Jupiter-Safe.png';
 // import logo_falcon_Beat from '../Assets/Logo-falconxxl-beat2.png';
 import React, { useState } from 'react';
 // import { useTranslation } from "react-i18next";
@@ -48,6 +48,10 @@ const pdfDocuments = [
     },
     {
         label: "Formations QHSE (PDF)",
+        filePath: "https://www.dropbox.com/scl/fi/XXXXXXXX/formations-qhse.pdf?dl=1",
+    },
+    {
+        label: "Formations des outils (PDF)",
         filePath: "https://www.dropbox.com/scl/fi/XXXXXXXX/formations-qhse.pdf?dl=1",
     },
 ];
@@ -144,7 +148,7 @@ function NavbarMenu() {
                                 <NavLink className="Services-Link" to="#">Audits QHSE</NavLink>
                                 <NavLink className="Services-Link" to="#">Gestion des risques</NavLink>
                                 <NavLink className="Services-Link" to="#">Formations QHSE</NavLink>
-                                {/*<NavLink className="Services-Link" to="#">Branding (NextEclat)</NavLink>*/}
+                                <NavLink className="Services-Link" to="#">Formations des outils</NavLink>
 
                                 <a
                                     href="https://nexteclat.com/"

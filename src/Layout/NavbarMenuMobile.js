@@ -2,7 +2,7 @@ import './NavbarMenuMobile.css';
 // import '../App.css';
 import {NavLink} from "react-router-dom";
 // // import {Link} from 'react-scroll';
-import logo from '../Assets/NatProteg_logo3.png';
+import logo from '../Assets/1.LOGO-Jupiter-Safe.png';
 // import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 // import LanguageDropdown from "../Components/LanguageDropdown"

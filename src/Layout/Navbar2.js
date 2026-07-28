@@ -33,7 +33,7 @@ function Navbar2() {
                     <i className="fa-solid fa-envelope"></i>
 
                     <span>
-                        contact@natproteg.nl
+                        contact@jupiter safe.nl
                     </span>
 
                 </div>

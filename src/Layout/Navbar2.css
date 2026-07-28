@@ -15,7 +15,9 @@
     height:50px;
 
     /*background-color:#ff0000;*/
-    background-color:#f7f5f0;
+    /*background-color:#f7f5f0;*/
+
+    background-color:#0c65cf;
 
     box-sizing:border-box;
 
@@ -74,7 +76,9 @@
     gap:8px;
 
 
-    color:#2175d9;
+    /*color:#2175d9;*/
+
+    color:white;
 
 
     font-size:14px;
@@ -95,7 +99,9 @@
 
     font-size:12px;
 
-    color:#2175d9;
+    /*color:#2175d9;*/
+
+    color:white;
 
 
 }
@@ -146,7 +152,9 @@
 .Navbar2-social {
 
 
-    color:#2175d9;
+    /*color:#2175d9;*/
+
+    color:white;
 
 
     text-decoration:none;
@@ -180,7 +188,9 @@
 .Navbar2-social:hover i {
 
 
-    color:#2175d9;
+    /*color:#2175d9;*/
+
+    color:#0f1941;
 
 
     transform:scale(1.15);

@@ -87,6 +87,8 @@
 
     /*border-radius: 7px;*/
 
+    /*background:white;*/
+
     background:white;
 
     padding:50px;
@@ -381,6 +383,8 @@
 
         background:white;
 
+        /*background: transparent;*/
+
 
 
     }
@@ -426,9 +430,9 @@
     .hero-content-box h1{
 
 
-        font-size:30px;
+        font-size:26px;
         /*color: #0091ff;*/
-        color: #052045;
+        color: #0f1941;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
 
@@ -439,13 +443,13 @@
     .hero-content-box p{
 
 
-        font-size:18px;
-        /*color: white;*/
+        font-size:17px;
+        color: #0f1941;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         width: 90%;
         /*color: #5a607c;*/
-        color: black;
+        /*color: black;*/
         /*background-color: #f3bb2f;*/
 
 
@@ -469,6 +473,15 @@
 
 
         justify-content:center;
+
+        /*background: #0c65cf;*/
+
+        /*color: white;*/
+
+        font-size:16px;
+
+
+        border: 2px solid #0c65cf;
 
 
     }

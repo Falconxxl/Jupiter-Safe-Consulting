@@ -43,7 +43,7 @@
 .Container-Footer-logoSlogan {
     width: 250px;
     height: 300px;
-    /*background-color: black;*/
+    /*background-color: violet;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +92,7 @@
 .Container-Footer-links {
     width: 800px;
     height: auto;
-    /*background-color: blue;*/
+    /*background-color: saddlebrown;*/
     display: flex;
     justify-content: center;
     gap:0px;
@@ -101,7 +101,7 @@
 
 .Container-Footer-links-details {
     width: 170px;
-    height: 300px;
+    height: 330px;
     /*background-color: #0b3f88;*/
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@
 .Container-Footer-SocialMedia {
     width: 200px;
     height: auto;
-    /*background-color: violet;*/
+    /*background-color: greenyellow;*/
     display: flex;
     flex-direction: column;
 }
@@ -223,7 +223,7 @@
 }
 
 .Container-Footer-TextNewsletter {
-    /*background-color: white;*/
+    background-color: white;
     border-radius: 15px;
     width: auto;
     height: 140px;

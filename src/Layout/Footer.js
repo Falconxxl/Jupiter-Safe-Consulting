@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo_footer from '../Assets/logo_natproteg_footer.png';
+import logo_footer from '../Assets/1.LOGO-Jupiter-Safe-white.png';
 
 import React, { useState } from "react";
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
@@ -114,7 +114,7 @@ function Footer() {
                         {/*<p className="Footer-title-details-small">+31685533124 (DRC/Kinshasa)</p>*/}
 
                         <p className="Footer-title-details">Email:</p>
-                        <p className="Footer-title-details-small">contact@natproteg.nl</p>
+                        <p className="Footer-title-details-small">contact@jupiter safe.nl</p>
 
                         <p className="Footer-title-details">Adres:</p>
                         <p className="Footer-title-details-small">Avenue Uvira 60 </p>

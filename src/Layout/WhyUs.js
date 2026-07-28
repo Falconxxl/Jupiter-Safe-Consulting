@@ -7,7 +7,7 @@ function WhyUs() {
             <div className="Container-WhyUs-left">
                 <h1>
                     Pourquoi faire confiance à <br />
-                    <span>NatProteg</span> ?
+                    <span>Jupiter Safe</span> ?
                 </h1>
             </div>
 

@@ -48,7 +48,7 @@ function ServiceHome () {
 
                 <div className="Container-ServiceHome-single">
 
-                    <NavLink to='/Webdesign' className="media-Container-ServiceHome-single">
+                    <NavLink to='/ServiceDetail' className="media-Container-ServiceHome-single">
                         <img src={pic_saafety0} alt="wedding_home"
                              className="image-mike_brenda-home"
                         />
@@ -62,7 +62,7 @@ function ServiceHome () {
                         performance et assurer leur conformité aux normes internationales.
                     </p>
 
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Découvrez notre service
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -73,7 +73,7 @@ function ServiceHome () {
 
                 <div className="Container-ServiceHome-single">
 
-                    <NavLink to='/Webdesign' className="media-Container-ServiceHome-single">
+                    <NavLink to='#' className="media-Container-ServiceHome-single">
                         <img src={pic_saafety1} alt="wedding_home"
                              className="image-mike_brenda-home"
                         />
@@ -88,7 +88,7 @@ function ServiceHome () {
                         réglementaires.
                     </p>
 
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Découvrez notre service
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -99,7 +99,7 @@ function ServiceHome () {
 
                 <div className="Container-ServiceHome-single">
 
-                    <NavLink to='/Webdesign' className="media-Container-ServiceHome-single">
+                    <NavLink to='#' className="media-Container-ServiceHome-single">
                         <img src={pic_saafety2} alt="wedding_home"
                              className="image-mike_brenda-home"
                         />
@@ -113,7 +113,7 @@ function ServiceHome () {
                         des dangers et la mise en œuvre de solutions adaptées.
                     </p>
 
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Découvrez notre service
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>
@@ -124,7 +124,7 @@ function ServiceHome () {
 
                 <div className="Container-ServiceHome-single">
 
-                    <NavLink to='/Webdesign' className="media-Container-ServiceHome-single">
+                    <NavLink to='#' className="media-Container-ServiceHome-single">
                         <img src={pic_saafety3} alt="wedding_home"
                              className="image-mike_brenda-home"
                         />
@@ -138,7 +138,32 @@ function ServiceHome () {
                         pour favoriser une culture durable de prévention.
                     </p>
 
-                    <NavLink to='/Webdesign' className="btn-text-Container-ServiceHome-single">
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
+                        Découvrez notre service
+                        <i className="fa-solid fa-arrow-right"></i>
+                    </NavLink>
+
+                </div>
+
+                {/*----------------Expertisess 2 Formations des outils--------------------------*/}
+
+                <div className="Container-ServiceHome-single">
+
+                    <NavLink to='#' className="media-Container-ServiceHome-single">
+                        <img src={pic_saafety3} alt="wedding_home"
+                             className="image-mike_brenda-home"
+                        />
+                    </NavLink>
+
+                    <h1>Formations des outils</h1>
+
+                    <p>
+                        Développement des compétences des équipes à travers des formations aux
+                        outils d'excellence opérationnelle. Nous renforçons les pratiques pour
+                        améliorer la performance, la productivité et l'amélioration continue..
+                    </p>
+
+                    <NavLink to='#' className="btn-text-Container-ServiceHome-single">
                         Découvrez notre service
                         <i className="fa-solid fa-arrow-right"></i>
                     </NavLink>

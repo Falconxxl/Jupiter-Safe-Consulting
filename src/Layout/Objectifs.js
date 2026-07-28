@@ -25,10 +25,10 @@ const IconCheck = () => (
    be edited in one place without touching the markup below.
 ===================================================================== */
 
-const label = "NatProtec";
+const label = "Jupiter Safe";
 const title = "Nos objectifs et cibles";
 
-const introLead = "NatProtec";
+const introLead = "Jupiter Safe Consulting";
 const introRest =
     " apporte son accompagnement aux entreprises dans la mise en place du système de management QHSE visant à :";
 

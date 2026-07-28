@@ -10,7 +10,7 @@ const testimonials = [
         city: 'Kinshasa',
         project: 'Système de management ISO',
         review:
-            "NatProteg nous a accompagnés dans la mise en place de notre système de management ISO. Grâce à leur expertise et leur méthodologie, nous avons structuré nos processus, renforcé notre conformité et amélioré notre efficacité opérationnelle. Une équipe professionnelle et à l'écoute.",
+            "Jupiter Safe nous a accompagnés dans la mise en place de notre système de management ISO. Grâce à leur expertise et leur méthodologie, nous avons structuré nos processus, renforcé notre conformité et amélioré notre efficacité opérationnelle. Une équipe professionnelle et à l'écoute.",
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const testimonials = [
         city: 'Matadi',
         project: 'Audit QHSE',
         review:
-            "L'audit réalisé par NatProteg nous a permis d'identifier plusieurs axes d'amélioration en matière de qualité, d'hygiène et de sécurité. Les recommandations étaient claires, concrètes et parfaitement adaptées à notre activité. Nous recommandons vivement leurs services.",
+            "L'audit réalisé par Jupiter Safe nous a permis d'identifier plusieurs axes d'amélioration en matière de qualité, d'hygiène et de sécurité. Les recommandations étaient claires, concrètes et parfaitement adaptées à notre activité. Nous recommandons vivement leurs services.",
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const testimonials = [
         city: 'Kisangani',
         project: 'Gestion des risques professionnels',
         review:
-            "Nous recherchions un partenaire capable d'améliorer la sécurité de nos équipes. NatProteg a réalisé une analyse complète des risques et proposé des solutions efficaces. Nous avons constaté une nette amélioration de nos pratiques et de notre organisation.",
+            "Nous recherchions un partenaire capable d'améliorer la sécurité de nos équipes. Jupiter Safe a réalisé une analyse complète des risques et proposé des solutions efficaces. Nous avons constaté une nette amélioration de nos pratiques et de notre organisation.",
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const testimonials = [
         city: 'Lubumbashi',
         project: 'Formation QHSE',
         review:
-            "Les formations dispensées par NatProteg ont permis à nos collaborateurs de mieux comprendre les exigences QHSE et d'adopter les bonnes pratiques au quotidien. Les formateurs étaient compétents, pédagogues et très disponibles.",
+            "Les formations dispensées par Jupiter Safe ont permis à nos collaborateurs de mieux comprendre les exigences QHSE et d'adopter les bonnes pratiques au quotidien. Les formateurs étaient compétents, pédagogues et très disponibles.",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const testimonials = [
         city: 'Kinshasa',
         project: 'Accompagnement QHSE',
         review:
-            "NatProteg nous accompagne dans la mise en conformité réglementaire de notre entreprise. Leur suivi est rigoureux et les solutions proposées sont toujours adaptées à notre secteur. Un véritable partenaire de confiance.",
+            "Jupiter Safe nous accompagne dans la mise en conformité réglementaire de notre entreprise. Leur suivi est rigoureux et les solutions proposées sont toujours adaptées à notre secteur. Un véritable partenaire de confiance.",
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ const testimonials = [
         city: 'Lubumbashi',
         project: 'Diagnostic QHSE',
         review:
-            "Le diagnostic réalisé par NatProteg nous a permis d'avoir une vision claire de nos points forts et des améliorations à mettre en œuvre. Leur approche est structurée, transparente et orientée vers des résultats concrets.",
+            "Le diagnostic réalisé par Jupiter Safe nous a permis d'avoir une vision claire de nos points forts et des améliorations à mettre en œuvre. Leur approche est structurée, transparente et orientée vers des résultats concrets.",
     },
     {
         id: 7,
@@ -58,7 +58,7 @@ const testimonials = [
         city: 'Matadi',
         project: 'Amélioration continue',
         review:
-            "Depuis notre collaboration avec NatProteg, nous bénéficions d'un accompagnement régulier qui nous aide à maintenir nos performances et à améliorer continuellement nos pratiques QHSE. Leur expertise apporte une réelle valeur ajoutée à notre entreprise.",
+            "Depuis notre collaboration avec Jupiter Safe, nous bénéficions d'un accompagnement régulier qui nous aide à maintenir nos performances et à améliorer continuellement nos pratiques QHSE. Leur expertise apporte une réelle valeur ajoutée à notre entreprise.",
     },
 ];
 
@@ -164,7 +164,7 @@ function Testimony() {
                 {/*</h2>*/}
 
                 <p className="ts-subtitle">
-                    Découvrez les retours d'entreprises qui ont choisi NatProteg pour renforcer leur performance QHSE et leur conformité réglementaire.
+                    Découvrez les retours d'entreprises qui ont choisi Jupiter Safe pour renforcer leur performance QHSE et leur conformité réglementaire.
                 </p>
             </div>
 

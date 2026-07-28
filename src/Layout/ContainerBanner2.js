@@ -2,7 +2,7 @@ import './ContainerBanner2.css';
 
 import desktop_banner1 from "../../src/Images/background_security_pic5.jpg";
 // import mobile_banner from "../../src/Images/background_natalie_mobile3.jpg";
-import mobile_banner from "../../src/Images/background_blue_mobile.jpg";
+import mobile_banner from "../../src/Images/background_mobile_banner.jpg";
 
 
 import { Link } from "react-scroll";
